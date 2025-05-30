@@ -1,0 +1,13 @@
+fastapi
+uvicorn
+streamlit
+opencv-python
+pillow
+torch
+torchvision
+requests
+numpy
+google-generativeai
+python-dotenv
+python-multipart
+streamlit-extras
