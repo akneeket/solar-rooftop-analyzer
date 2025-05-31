@@ -75,8 +75,7 @@ if uploaded_file:
             try:
                 uploaded_file.seek(0)
                 files = {"file": (uploaded_file.name, uploaded_file, "application/octet-stream")}
-                response = requests.post("http://127.0.0.1:8000/analyze", files=files)
-
+                response = requests.post("https://solar-rooftop-analyzer.onrender.com/analyze", files=files)
                 if response.status_code == 200:
                     data = response.json()
                     rooftop_area = data.get("rooftop_area")
